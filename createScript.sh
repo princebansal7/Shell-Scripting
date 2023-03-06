@@ -3,7 +3,7 @@
 echo "Enter file name with extension:"
 read FILE
 
-# creating FILE Scripts directory with executable permission
+# creating FILE in Scripts directory with executable permissions
 
 cd Scripts/
 touch $FILE
