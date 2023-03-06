@@ -1,7 +1,6 @@
-#! /bin/zsh
+#! /bin/bash
 
-echo "Enter file name with extension:"
-read FILE
+read -p "Enter file name with extension (e.g. fileName.sh): " FILE  # read -p doesn't work in zsh, so added bash path
 
 # creating FILE in Scripts directory with executable permissions
 
