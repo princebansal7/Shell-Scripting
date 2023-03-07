@@ -1,14 +1,15 @@
 #! /bin/bash
 
-read -p "Enter file name with extension (e.g. fileName.sh): " FILE  # read -p doesn't work in zsh, so added bash path
+read -p "Enter file name: " FILE  # read -p doesn't work in zsh, so added bash path
 
 # creating FILE in Scripts directory with executable permissions
 
 cd Scripts/
-touch $FILE
-chmod 755 $FILE
+touch ${FILE}.sh
+chmod 755 ${FILE}.sh
 
 # Appending basic code in the FILE
-echo "#! /bin/zsh" >> $FILE
+echo "#! /bin/bash" >> ${FILE}.sh
+echo "#----Automatically Created script------" >> ${FILE}.sh
 
-echo "File created successfully!"
+echo "${FILE}.sh file created successfully!"
