@@ -9,7 +9,7 @@ echo ""
 echo "Do you want to push committed files?"
 read -p "PRESS Y for YES else PRESS anything: " ANS
 
-if [ $ANS == "Y" -o $ANS == "y"]; then
+if [ $ANS == "Y" -o $ANS == "y" ]; then
     git push
     echo ""
     echo "All files committed & pushed successfully!"
