@@ -4,6 +4,10 @@
 
 echo $HOME
 echo $(hostname) # predefined commands expansion using: $()
+var=pwd
+echo $var
+$(var)
+
 
 # How to declare variables ?
 
