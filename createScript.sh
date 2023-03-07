@@ -4,7 +4,7 @@ read -p "Enter file name: " FILE  # read -p doesn't work in zsh, so added bash p
 
 # creating FILE in Scripts directory with executable permissions
 
-cd Scripts/
+cd /Users/princebansal/Developer/CODES/bash-scripting/Scripts
 touch ${FILE}.sh
 chmod 755 ${FILE}.sh
 
