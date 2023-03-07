@@ -37,3 +37,5 @@ functionReturns(){
 
 functionReturns 14
 echo "return value is: $?" 
+
+echo ""
