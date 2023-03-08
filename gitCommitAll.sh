@@ -6,8 +6,7 @@ git add .
 git commit -m "$MSG"
 
 echo ""
-echo "Do you want to push committed files? (Y/N): "
-read ANS
+read -p "Do you want to push committed files? (Y/N): " ANS
 
 if [ $ANS == "Y" -o $ANS == "y" ]; then
     git push
