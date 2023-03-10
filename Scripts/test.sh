@@ -1,7 +1,7 @@
 #! /bin/bash
 #----Automatically Created script------
 
-if [ "abcd" == "abcd" ]; then
+if [[ 4 -eq 4 ]]; then
     echo "Equal"
 else
     echo "Not equal"

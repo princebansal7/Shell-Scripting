@@ -35,7 +35,17 @@ functionReturns(){
     fi
 }
 
-functionReturns 14
+functionReturns 14 # 14 is argument
 echo "return value is: $?" 
 
 echo ""
+
+# NOTE:
+# 1.
+# exit status = 0 if command executed successfully
+# exit status is Non zero if command isn't executed successfully
+
+# 2. Variable SCOPE, by deafult all the variables in script are global
+#    that means they are avaiable everywhere
+#    to make a variable local: use local keyword before declaring:
+#    eg: local var=5 (it will be available only inside the scope it's been declared)
