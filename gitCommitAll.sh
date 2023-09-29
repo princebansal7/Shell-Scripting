@@ -1,19 +1,19 @@
 #! /bin/bash
 
-read -p "Enter commit message: " MSG
+read -p "Type Commit message: " MSG
 git add .
 git commit -m "$MSG"
 
 echo ""
-read -p "Do you want to push committed files? (Y/N): " ANS
+read -p "Push code (Y/N) ?: " ANS
 
 if [ $ANS == "Y" -o $ANS == "y" ]; then
     git push
     echo ""
-    echo "---[All files committed & pushed successfully!]---"
+    echo "---All files COMMITTED & PUSHED successfully!---"
     echo ""
 else
     echo ""
     echo ""
-    echo "---[All files added & committed sucessfully]---"
+    echo "---All files ADDED & COMMITTED sucessfully---"
 fi
